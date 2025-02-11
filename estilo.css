@@ -1,0 +1,683 @@
+/* ========fonts========*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+@font-face {
+  font-family: "Fogtwo";
+  src: url("./.fonts/FogtwoNo5.otf");
+}
+
+@font-face {
+  font-family: "Kiona";
+  src: url("./.fonts/Kiona-Regular.ttf");
+}
+
+:root {
+  --bg: #FFFFF0;
+  --bg2: #796a64;
+  --zap1: #25D366;
+  --zap2: #179844;
+  --font1: #E5D6B4;
+  --font2: #333;
+  --border: 0.1rem solid #5e3926;
+  --shadow1: -3px 3px 10px #fbcfb7;
+  --main-color: #895b43;
+  --black: #010103;
+  --white: #fff;
+
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  background-color: var(--bg);
+}
+
+#hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96, 69vw;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: var(--bg2);
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.foto-hero img {
+  max-width: 89%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: var(--shadow1);
+}
+
+.content-wrapper {
+  flex: 1;
+  text-align: center;
+  align-content: center;
+}
+
+.logo-hero img {
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 3rem;
+}
+
+.text-content h1 {
+  font-size: clamp(3rem, 2vw, 6rem);
+  margin-bottom: 1rem;
+  font-family: Fogtwo;
+  color: var(--font1);
+  padding-bottom: 2rem;
+}
+
+.text-content p {
+  font-size: clamp(0.5rem, 1.25vw, 1.25vw);
+  line-height: 1.6;
+  font-family: Kiona;
+  color: var(--font1);
+}
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--zap1);
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.6em;
+  font-family: "Poppins";
+  transition: background-color 0.3s ease;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.btn-whatsapp:hover {
+  background-color: var(--zap2);
+}
+
+
+/* ==== CARDS ====*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.card {
+  background-image: url(".assets/.textura/cremeouro.avif");
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: var(--font2);
+}
+
+.card p,
+ul {
+  font-size: 1em;
+  color: var(--font2);
+  text-align: justify;
+  line-height: 1.5;
+  font-family: "Poppins";
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* === Video ===*/
+.declaracao{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #7B726C;
+}
+
+.video-responsivo {
+  width: 341px;
+  height: 600px;
+  flex-shrink: 0;
+  box-shadow: -3px 3px 10px #fbcfb7;
+}
+
+.text p{
+  font-family: "Fogtwo";
+  font-size: clamp(1vw, 2vw, 3vw);
+  font-style: bold;
+  text-align: center;
+  color: var(--font1);
+}
+
+a {
+  color: var(--font1);
+}
+a:visited {
+   color: var(--font1);
+}
+a:hover {
+   color: var(--font1);
+}
+a:active {
+   color: var(--font1);
+}
+
+/*=== Quem sou ===*/
+.quemsou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.moldura {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  align-content: center;
+}
+
+.foto {
+  flex: 1;
+  max-width: 40%;
+}
+
+.foto img {
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+}
+
+.curriculo {
+  flex: 2;
+}
+
+.curriculo h2 {
+  font-size: clamp(2rem, 2vw, 1.25vw);
+  color: #765f48;
+}
+
+.curriculo h3 {
+  font-size: clamp(0.2rem, 1vw, 1.8rem);
+  margin: 10px 0;
+  color: #4e4032;
+}
+
+.curriculo ul {
+  list-style-type: disc;
+}
+
+.curriculo ul li {
+  font-size: clamp(0.75rem, 1.2vw, 0.6rem);
+  margin-bottom: 10px;
+}
+
+.curriculo ul li a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.curriculo ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ========galeria========*/
+
+.consultorio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-list {
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.slide-item {
+  flex: 0 0 auto;
+}
+
+.slide-content img {
+  width: 75px;
+  /* Reduzido para metade do tamanho */
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.slide-content img:hover {
+  transform: scale(1.1);
+}
+
+
+/* Estilos para o modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* Garante que a imagem ocupe toda a área visível */
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #75695e;
+  color: #e5d4b6;
+  text-align: center;
+  padding: 2vw;
+  padding-bottom: 8vw;
+  /* Ajuste para evitar sobreposição do botão */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90vw;
+  margin: auto;
+  padding: 2vw;
+  gap: 1vw;
+}
+
+.logo img {
+  max-width: 10vw;
+  height: auto;
+}
+
+.info {
+  flex: 2;
+  text-align: center;
+  font-size: 1.5vw;
+  max-width: 40vw;
+}
+
+.social,
+.local {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw;
+}
+
+.social a,
+.local a {
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.instagram {
+  background-image: url('.icons/instadourado_p.png');
+}
+
+.youtube {
+  background-image: url('.icons/ytdourado_p.png');
+}
+
+.whatsapp {
+  background-image: url('.icons/zapdourado_p.png');
+}
+
+.phone {
+  background-image: url('.icons/telefonedourado_p.png');
+}
+
+.maps {
+  background-image: url('.icons/localdourado_p.png');
+}
+
+.email {
+  background-image: url('.icons/maildourado2_p.png');
+}
+
+.privacy,
+.credits {
+  margin-top: 1.5vw;
+  font-size: 1.2vw;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social,
+  .local {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 430px) {
+
+  .foto-hero{
+    padding-right: 3.2rem;
+  }
+  
+  .logo-hero img {
+    width: 20rem;
+    margin: 0 auto;
+    display: block;
+    padding-right: 2rem;
+  }
+  
+  .text-content h1 {
+    font-size: clamp(1vw, 2vw, 3vw);
+    font-family: Fogtwo;
+    color:var(--font1);
+    padding-right: 2.5rem;
+    padding-top: 1.5rem;
+  }
+  
+  .text-content p {
+    font-size: clamp(2vw, 2vw, 3vw);
+    line-height: 1.6;
+    font-family: Kiona;
+    color:var(--font1);
+    width: 96vw;
+    padding-right: 4rem;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  .text p{
+    font-family: "Fogtwo";
+    font-size: clamp(3vw, 2vw, 6vw);
+    font-style: bold;
+    text-align: center;
+    color: var(--font1);
+   
+  }
+
+  .logo img {
+    max-width: 50%;
+  }
+
+  .info {
+    display: none;
+  }
+
+  .local,
+  .social {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+  }
+
+  .footer {
+    padding-bottom: 18vw;
+    /* Aumenta o espaço para botão flutuante */
+  }
+}
+
+.footer p {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.info {
+  display: none;
+}
+
+.logo img {
+  max-width: 50%;
+}
+
+.curriculo {
+  width: 95%;
+}
+
+.curriculo h2 {
+  font-size: clamp(1rem, 1vw, 0.615vw);
+  color: #765f48;
+}
+
+.curriculo h3 {
+  font-size: clamp(0.1rem, 0.5vw, 0.9rem);
+  margin: 10px 0;
+  color: #4e4032;
+}
+
+.curriculo ul li {
+  font-size: clamp(0.7rem, 1vw, 0.3rem);
+  margin-bottom: 10px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Tablet (2 colunas) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .foto-hero{
+    padding-right: 3.2rem;
+  }
+  
+  .logo-hero img {
+    width: 30rem;
+    margin: 0 auto;
+    display: block;
+    padding-right: 2rem;
+    padding-top: 5rem;
+  }
+  
+  .text-content h1 {
+    font-size: clamp(5vw, 2vw, 10vw);
+    font-family: Fogtwo;
+    color:var(--font1);
+    padding-right: 2.5rem;
+    padding-top: 1.5rem;
+  }
+  
+  .text-content p {
+    font-size: clamp(2vw, 2vw, 3vw);
+    line-height: 1.6;
+    font-family: Kiona;
+    color:var(--font1);
+    width: 96vw;
+    padding-right: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-content h1 {
+    font-size: clamp(0.75rem, 2vw, 1.5rem);
+  }
+
+  .foto img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow1);
+  }
+
+  .text-content p {
+    font-size: clamp(0.45rem, 1.25vw, 0.6rem);
+  }
+}
+
+/* Celular e smartwatch (1 coluna) */
+@media (max-width: 767px) {
+  #hero-section {
+    width: 105vw;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .card-title {
+    font-size: 1.3em;
+  }
+
+  .card p,
+  ul {
+    font-size: 0.9em;
+  }
+
+  .btn-whatsapp {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content p {
+    font-size: clamp(0.5rem, 1.25vw, 1.25vw);
+    line-height: 1.6;
+  }
+
+  #floating-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .btn-whatsapp {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .hero-container {
+    display: none;
+  }
+
+  #floating-btn {
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .moldura {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foto {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .botao-agendar {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .curriculo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .foto {
+    display: none;
+  }
+}

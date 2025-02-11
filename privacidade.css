@@ -1,0 +1,184 @@
+/* ========fonts========*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+@font-face {
+    font-family: "Fogtwo";
+    src: url("./.fonts/FogtwoNo5.otf");
+}
+
+@font-face {
+    font-family: "Kiona";
+    src: url("./.fonts/Kiona-Regular.ttf");
+}
+
+:root {
+    --bg: #FFFFF0;
+    --bg2:#796a64;
+    --zap1:#25D366;
+    --zap2:#179844;
+    --font1:#E5D6B4;
+    --font2:#333;
+    --border: 0.1rem solid #5e3926;
+    --shadow1: -3px 3px 10px #fbcfb7;
+    --main-color: #895b43;
+    --black: #010103;
+    --white: #fff;
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg2);
+}
+
+.logo {
+    align-items: center;
+    width: 400px;
+    height: 137px;
+    padding-top: 15px;
+}
+
+.text-container{
+    color: var(--font1);
+    width: 150vh;
+}
+
+h1{
+    font-family: "Fogtwo";
+    text-align: center;
+    font-size: 3.5rem;
+    padding-top: 40px;
+}
+
+h2{
+    font-family: "Fogtwo";
+    font-size: 2.5rem;
+    padding-top: 10px;    
+}
+
+h3{
+    font-family: "Kiona";
+    text-align: center;
+}
+
+.text {    
+    font-family: "Kiona";
+    font-size: 1.5rem;
+    padding-top: 5px;
+    text-align: justify;
+}
+
+li{
+    font-family: "Kiona";
+    font-size: 1.5rem;
+    color: var(--font1);
+    text-align: justify;
+}
+
+
+
+/* === Responsividade ===*/
+.body{
+    
+    max-width: 5vw;
+}
+
+@media (max-width: 480px) {
+    .text {    
+        font-family: "Kiona";
+        font-size: 0.75rem;
+        padding-top: 5px;
+        text-align: justify;
+    }
+    
+    li{
+        font-family: "Kiona";
+        font-size: 0.75rem;
+        color: var(--font1);
+        text-align: justify;
+    }
+
+    h1{
+        font-family: "Fogtwo";
+        text-align: center;
+        font-size: 1.75rem;
+        
+    }
+    
+    h2{
+        font-family: "Fogtwo";
+        font-size: 1.25rem;
+          
+    }
+
+    .logo {
+        align-items: center;
+        width: 10px;
+        height: auto;
+        padding-top: 15px;
+    }
+
+
+    .footer-logo img {
+        max-width: 100px;
+        /* Tamanho máximo do logo */
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

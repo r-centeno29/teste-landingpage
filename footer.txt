@@ -1,0 +1,104 @@
+/* === Footer ===*/
+.footer {
+  background-color: #7B726C;
+  /* Cor de fundo suave */
+  padding: 20px 10%;
+  /* Espaçamento interno */
+  text-align: center;
+  /* Centraliza o texto */
+  text-decoration: none;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  /* Exibe as colunas em linha */
+  margin-bottom: 20px;
+  /* Espaço abaixo das colunas */
+  width: 100rem;
+}
+
+.logo-column img {
+  max-width: 200px;
+  /* Tamanho máximo do logo */
+}
+
+.contact-info img{
+  max-width: 54px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+  width: 80rem;
+  font-family: "Fogtwo", sans-serif;
+  font-size: 1.5rem;
+  padding-top: 0.8rem;
+  padding-left: 1rem;
+}
+
+.footer-contact #end {
+  list-style-image: url(".vscode/.icons/localdourado.png");
+}
+
+.footer-contact #fone {
+  list-style-image: url(".vscode/.icons/telefonedourado.png");
+}
+
+.footer-contact #mail {
+  list-style-image: url(".vscode/.icons/maildourado2.png")
+}
+
+.footer-contact img {
+  max-width: 32px;
+}
+
+.footer-social img {
+  max-width: 32px;
+}
+
+.footer-social {
+  flex: 1;
+  /* Cada coluna ocupa espaço igual */
+  max-width: 32px;
+  /* Largura mínima para as colunas */
+  padding: 0 10px;
+  /* Espaçamento lateral nas colunas */
+  padding-top: 10px;
+}
+
+.footer-social a {
+  display: block;
+  /* Cada link em sua própria linha */
+  text-decoration: none;
+  /* Remove o sublinhado */
+}
+
+.footer-social a:hover {
+  text-decoration: underline;
+  /* Sublinha ao passar o mouse */
+}
+
+.footer-bottom {
+  margin-top: 10px;
+  /* Espaço acima da div inferior */
+  color: #ffffff;
+  /* Cor do texto */
+  text-shadow:
+      0 0 10px rgba(255, 255, 255, 0.7),
+      /* Efeito de brilho suave */
+      0 0 20px rgba(255, 255, 255, 0.5),
+      /* Efeito de brilho mais intenso */
+      0 0 30px rgba(255, 255, 255, 0.3);
+  /* Efeito de brilho adicional */
+  text-align: center;
+  /* Centraliza o texto */
+}
+
+.footer-bottom p {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  /* Tamanho da fonte */
+}
